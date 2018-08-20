@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { firestore } from './firebase';
 import './styles/Scores.css';
 import uuid from 'uuid/v4';
+import Data from './data';
+
 
 class Scores extends Component {
   constructor(props) {

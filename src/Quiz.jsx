@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { GoogleApiWrapper } from 'google-maps-react';
-import Map from './Map';
 import { firebase, firestore } from './firebase';
 import Answers from './Answers';
 import data from './data';
@@ -15,7 +13,7 @@ class Quiz extends Component {
       score: 0,
       isCorrect: false,
       isAnswered: false,
-      zoom: 17
+      // zoom: 17
     };
     this.checkAnswer = this.checkAnswer.bind(this);
     this.nextQuestion = this.nextQuestion.bind(this);
@@ -76,16 +74,9 @@ class Quiz extends Component {
           isCorrect={this.state.isCorrect}
           checkAnswer={this.checkAnswer}
         />
-        <Map
-          zoom={this.state.zoom}
-          marker={this.state.isAnswered}
-          google={this.props.google}
-          center={data[this.state.question].coordinates}
-        />
+        
       </div>
     );
   }
 }
-export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBgN8zc0SMhlbDtZBMj0Byk7i6ORGvP9uE&'
-})(Quiz);
+export default Quiz;
