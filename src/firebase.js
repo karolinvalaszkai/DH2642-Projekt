@@ -3,10 +3,10 @@ import firebase from 'firebase';
 
 // Initalize and export Firebase.
 firebase.initializeApp({
-  apiKey: 'AIzaSyCyAqsphTnxuP8bIV9YiQt4PtY4tvbtgDc',
-  authDomain: 'dm2518-quizmania.firebaseapp.com',
-  databaseURL: 'https://dm2518-quizmania.firebaseio.com',
-  projectId: 'dm2518-quizmania'
+  apiKey: "AIzaSyAQ00JZHT0IUIltxU6kUT9TXbm8ACBZjOg",
+  authDomain: "dh2642-projekt.firebaseapp.com",
+  databaseURL: "https://dh2642-projekt.firebaseio.com",
+  projectId: "dh2642-projekt",
 });
 
 const firestore = firebase.firestore();
