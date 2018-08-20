@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-class data extends React.Component {
+
+
+class hundar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -53,7 +55,7 @@ class data extends React.Component {
     }
   }
 }
-export default data;
+export default hundar;
 
 
 

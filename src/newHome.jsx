@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { firebase, firestore } from './firebase';
 import { Link } from 'react-router-dom';
-import Scores from './Scores';
-import './styles/Home.css';
 import earth from './images/earth.jpg';
 
 const backgroundImg = {
   backgroundImage: 'url(' + earth + ')'
 };
 
-class Home extends Component {
+class newHome extends Component {
   state = {
     isSignedIn: false,
     userProfile: null
@@ -97,4 +95,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default newHome;
